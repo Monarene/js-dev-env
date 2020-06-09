@@ -1,0 +1,55 @@
+{
+	"repository": {
+		"type": "git",
+		"url": "git://github.com/user/javascript-development-environment.git"
+	},
+	"name": "javascript-development-environment",
+	"version": "1.0.1",
+	"description": "JavaScript development environment packages for use to build a Node.js project, obtained from: https://www.npmjs.com/search?q=",
+	"scripts": {},
+	"author": "Cory House",
+	"license": "MIT",
+	"dependencies": {
+		"whatwg-fetch": "^3.0.0"
+	},
+	"devDependencies": {
+		"babel-cli": "^6.26.0",
+		"babel-core": "^6.26.3",
+		"@babel/core": "^7.2.2",
+		"babel-loader": "^8.0.4",
+		"babel-preset-env": "^1.7.0",
+		"babel-register": "^6.26.0",
+		"chai": "^4.2.0",
+		"chalk": "^2.4.1",
+		"cheerio": "^1.0.0-rc.2",
+		"compression": "^1.7.3",
+		"cross-env": "^5.2.0",
+		"css-loader": "^2.0.1",
+		"eslint": "^5.10.0",
+		"eslint-plugin-import": "^2.14.0",
+		"eslint-watch": "^4.0.2",
+		"express": "^4.16.4",
+		"jsdom": "^13.1.0",
+		"json-schema-faker": "^0.5.0-rc16",
+		"json-server": "^0.14.0",
+		"localtunnel": "^1.9.1",
+		"lodash": "^4.17.11",
+		"mocha": "^5.2.0",
+		"nock": "^10.0.4",
+		"npm-run-all": "^4.1.5",
+		"nsp": "^3.2.1",
+		"numeral": "^2.0.6",
+		"open": "0.0.5",
+		"rimraf": "^2.6.2",
+		"style-loader": "^0.23.1",
+		"webpack": "^4.28.0",
+		"extract-text-webpack-plugin": "^3.0.2",
+		"webpack-dev-middleware": "^3.4.0",
+		"webpack-hot-middleware": "^2.24.3",
+		"webpack-md5-hash": "0.0.6"
+	},
+	"comments": {
+		"babel-preset-latest": "deprecated and babel-preset-env replaced",
+		"nsp": "deprecated, no alternate package, nsp built-in npm@6"
+	}
+}
