@@ -1,5 +1,5 @@
-var express = require("express");
-var path = require("path");
+import express from "express";
+const path = require("path");
 var open = require("open");
 
 var port = 3000;
