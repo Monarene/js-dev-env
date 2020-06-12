@@ -1,6 +1,6 @@
 import express from "express";
-const path = require("path");
-var open = require("open");
+import path from "path";
+import open from "open";
 import webpack from "webpack";
 import config from "../webpack.config.dev";
 
@@ -8,6 +8,9 @@ var port = 3000;
 var app = express();
 const compiler = webpack(config);
 
+/*
+eslint-disable no-console
+ */
 app.use(
 	require("webpack-dev-middleware")(compiler, {
 		noInfo: true,
