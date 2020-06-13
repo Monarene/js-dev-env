@@ -10,17 +10,21 @@
 		"prestart": "babel-node buildScripts/startMessage.js",
 		"open:src": "babel-node buildScripts/srcServer.js",
 		"ngrok": "ngrok http 3000",
-		"start": "npm-run-all --parallel open:src lint:watch test:watch",
+		"start": "npm-run-all --parallel open:src lint:watch test:watch start-mockapi",
 		"security-check": "npm audit --audit-level high",
 		"lint": "esw webpack.config.* src buildScripts",
 		"lint:watch": "npm run lint -- --watch",
 		"share": "npm-run-all --parallel open:src ngrok",
 		"test": "mocha --reporter progress buildScripts/testSetup.js \"src/**/*.test.js\"",
-		"test:watch": "npm run test -- --watch"
+		"test:watch": "npm run test -- --watch",
+		"generate-mock-data": "babel-node buildScripts/generateMockData",
+		"prestart-mockapi": "npm run generate-mock-data",
+		"start-mockapi": "json-server --watch src/api/db.json --port 3001"
 	},
 	"author": "Cory House",
 	"license": "MIT",
 	"dependencies": {
+		"faker": "^4.1.0",
 		"html-webpack-plugin": "^4.3.0",
 		"whatwg-fetch": "^3.0.0"
 	},
